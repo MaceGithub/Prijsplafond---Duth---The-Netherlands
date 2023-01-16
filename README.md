@@ -1,4 +1,8 @@
-# Prijsplafond---Duth---The-Netherlands
+# _A python program for comparing monthly energy usage with the dutch 'Prijsplafond'._
+
+The program uses python 3.7 with
+* datetime
+* colored 1.4.2
 
 Input for the calculations is a list with energy meter values.
 The list can be adjusted manually. 
@@ -19,3 +23,7 @@ For the last not completed period an estimation is calculated for the whole peri
 For each period the difference between energy usage and 'prijsplafond' is calculated (VERSCHIL).
 If the energy usage is within the 'prijsplafond' then the difference is displayed in **green**.
 If using more energy than the 'prijsplafond' the difference is displayed in **red**.
+
+
+
+
