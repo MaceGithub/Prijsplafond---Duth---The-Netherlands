@@ -125,7 +125,6 @@ def main():
 
             dagen, en, et, g = verschil(vorige_meter_stand, meter_stand)
             print_yellow(f' >> {dagen:4.1f} d ', end='')
-            # print_blue(f'({en:3d} kWh - {et:3d} kWh) netto {en - et:3d} kWh | {en / dagen:4.1f} kWh/dag | {et / dagen:4.1f} kWh/dag netto {(en - et) / dagen:4.1f} kWh/dag ', end='')
             print_blue(f'netto {en - et:3d} kWh ({en:3d}-{et:3d}) | {(en - et) / dagen:4.1f} kWh/dag ', end='')
             print_green_yellow(f'{g:4.1f} m3 | {g / dagen:4.1f} m3/dag ', end='')
 
