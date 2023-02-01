@@ -160,7 +160,6 @@ def main():
                 # print_yellow(f'({en / dagen:4.1f} kWh/dag - {et / dagen:4.1f} kWh/dag) = ', end='')
                 print_green_yellow(f'{g / dagen:5.1f} m3/dag ', end='')
 
-                maand_nr = int(meter_stand[0].split('-')[1])
                 periode_dagen = prijsplafond[maand_nr - 1][3]
                 schatting_kwh = ((en - et) / dagen) * periode_dagen
                 schatting_m3 = (g / dagen) * periode_dagen
